@@ -16,7 +16,12 @@ function TodoAfficher() {
       if (error) {
         console.log('error fetching tasks', error);
       } else {
-        setTodos(data);
+        const todos = data.map((todo: any) => ({
+          id: todo.id,
+          title: todo.title,
+          description: todo.description,
+        }));
+        setTodos(todos);
       }
     };
 
@@ -27,9 +32,17 @@ function TodoAfficher() {
     <div>
       {todos.map((todo: Todo) => (
         <div key={todo.id}>
-            
-          <h2>{todo.title}</h2>
-          <p>{todo.description}</p>
+            <form className='border'>
+                <input
+                type="text"
+                value={todo.title}
+                />
+            <input
+                type="text"
+                value={todo.description}
+                />
+            </form>
+         
         </div>
       ))}
     </div>
