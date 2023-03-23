@@ -23,7 +23,7 @@ function TodoCreation() {
   
   return (
     <div className=''>
-          <div className='text-white'>Todo App</div>
+          <div className='text-white bg-black'>Todo App</div>
           <div className='flex flex-col bg-indigo-500 p-8 '>
             <div className='flex flex-col  '>
               <form className="max-w-lg mx-auto mt-4" onSubmit={handleSubmit}  > {/* onSubmit={handleSubmit}  */}
@@ -58,6 +58,7 @@ function TodoCreation() {
                     Soumettre
                   </button>
                 </div>
+                <p className='mt-5'>PS raffraichir pour voir la tache</p>
               </form>
             </div>
           </div>
