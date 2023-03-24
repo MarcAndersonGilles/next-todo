@@ -4,6 +4,9 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 interface Todo {
   id: number;
   title: string;
@@ -137,7 +140,13 @@ function TodoAfficher() {
                 className='p-8 border mt-3'
                 readOnly
               />
+              <Link href={`/todo/${todo.id}`}>
+              <button className='button-details mt-2 mb-3'>
+                Détails
+              </button>
+              </Link>
             </form>
+            
           )}
           <div className='flex flex-row w-full bg-slate-500 justify-evenly border '>
             {/* Bouton pour marquer une tâche comme complétée */}
