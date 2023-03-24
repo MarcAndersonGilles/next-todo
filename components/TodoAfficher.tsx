@@ -47,6 +47,8 @@ function TodoAfficher() {
     }
   };
 
+
+
   const handleSave = async (todoId: number) => {
     // Modifier la tâche dans la base de données
     const { error } = await supabase.from('todos').update({ title, description }).match({ id: todoId });
@@ -62,53 +64,96 @@ function TodoAfficher() {
         }
       });
       setTodos(updatedTodos);
-      setIsEditing(false);
-
-      
+      setEditingId(null);
+      setTitle('');
+      setDescription('');
     }
   };
 
   const handleCancel = () => {
-    setIsEditing(false);
+    setEditingId(null);
+    setTitle('');
+    setDescription('');
   };
 
-  
+  const handleEdit = (todoId: number) => {
+    const todoToEdit = todos.find(todo => todo.id === todoId);
+    if (todoToEdit) {
+      setEditingId(todoToEdit.id);
+      setTitle(todoToEdit.title);
+      setDescription(todoToEdit.description);
+    }
+  };
+
 
   return (
     <div>
-        
+
       {todos.map((todo: Todo) => (
-        
+
         <div className=' bg-indigo-700 rounded-2xl mt-6 p-10 ' key={todo.id}>
-            <form className='flex flex-col   '>
-                <h1 className='bg-black border text-white border-black border-solid'>La Tache à Finir</h1>
-                <input
-                type="text  "
+          {editingId === todo.id ? (
+            // Afficher les champs d'édition si la tâche est en cours d'édition
+            <form className='flex flex-col' onSubmit={(e) => {
+              e.preventDefault();
+              handleSave(todo.id);
+            }}>
+              <input
+                type='text'
+                value={title}
+                onChange={(event) => setTitle(event.target.value)}
+                placeholder='Titre'
+                className='p-8'
+              />
+              <textarea
+                value={description}
+                onChange={(event) => setDescription(event.target.value)}
+                placeholder='Description'
+                className='p-8 border mt-3'
+              />
+              <div className='flex flex-row w-full bg-slate-500 justify-evenly border'>
+                <button className='button-save mt-2 mb-3' onClick={() => handleSave(todo.id)}>
+                  Enregistrer
+                </button>
+                <button className='button-cancel mt-2 mb-3' onClick={() => handleCancel()}>
+                  Annuler
+                </button>
+              </div>
+            </form>
+          ) : (
+            // Afficher les informations de la tâche si elle n'est pas en cours d'édition
+            <form className='flex flex-col'>
+              <h1 className='bg-black border text-white border-black border-solid'>
+                La Tache à Finir
+              </h1>
+              <input
+                type='text'
                 value={`Titre: ${todo.title}`}
                 className='p-8'
                 readOnly
-                />
-            <textarea
+              />
+              <textarea
                 value={`Description: ${todo.description}`}
                 className='p-8 border mt-3'
                 readOnly
-                />
+              />
             </form>
-            <div className='flex flex-row w-full bg-slate-500 justify-evenly border '>
+          )}
+          <div className='flex flex-row w-full bg-slate-500 justify-evenly border '>
             {/* Bouton pour marquer une tâche comme complétée */}
-            <button
-              className="button-complete mt-2 mb-3 "
-              //onClick={() => toggleComplete(todo)}
-            >
-              <CheckCircleIcon id="i " />
+            <button className='button-complete mt-2 mb-3 '>
+              <CheckCircleIcon id='i' />
             </button>
             {/* Bouton pour éditer une tâche */}
-            <button className="button-edit mt-2 mb-3  " onClick={() => setIsEditing(true)}>
-              <EditIcon id="i" />
+            <button
+              className='button-edit mt-2 mb-3  '
+              onClick={() => handleEdit(todo.id)}
+              disabled={isEditing && editingId !== todo.id}>
+              <EditIcon id='i' />
             </button>
             {/* Bouton pour supprimer une tâche */}
-            <button className="delete mt-2 mb-3 "  onClick={() => handleDelete(todo.id)} >  {/* onClick={() => handleDelete(todo.id)} */}
-              <DeleteIcon id="i" />
+            <button className='delete mt-2 mb-3 ' onClick={() => handleDelete(todo.id)}>
+              <DeleteIcon id='i' />
             </button>
           </div>
         </div>
