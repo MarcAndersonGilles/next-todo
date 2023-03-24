@@ -10,6 +10,8 @@ interface Todo {
   description: string;
 }
 
+
+
 function TodoAfficher() {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [editingId, setEditingId] = useState<number | null>(null);
@@ -35,7 +37,40 @@ function TodoAfficher() {
     fetchData();
   }, []);
 
-  
+  const handleDelete = async (todoId: number) => {
+    const { error } = await supabase.from('todos').delete().match({ id: todoId });
+    if (error) {
+      console.log('error deleting task', error);
+    } else {
+      const updatedTodos = todos.filter(todo => todo.id !== todoId);
+      setTodos(updatedTodos);
+    }
+  };
+
+  const handleSave = async (todoId: number) => {
+    // Modifier la tâche dans la base de données
+    const { error } = await supabase.from('todos').update({ title, description }).match({ id: todoId });
+    if (error) {
+      console.log('error updating task', error);
+    } else {
+      // Mettre à jour l'état des tâches
+      const updatedTodos = todos.map(todo => {
+        if (todo.id === todoId) {
+          return { id: todo.id, title, description };
+        } else {
+          return todo;
+        }
+      });
+      setTodos(updatedTodos);
+      setIsEditing(false);
+
+      
+    }
+  };
+
+  const handleCancel = () => {
+    setIsEditing(false);
+  };
 
   
 
@@ -43,6 +78,7 @@ function TodoAfficher() {
     <div>
         
       {todos.map((todo: Todo) => (
+        
         <div className=' bg-indigo-700 rounded-2xl mt-6 p-10 ' key={todo.id}>
             <form className='flex flex-col   '>
                 <h1 className='bg-black border text-white border-black border-solid'>La Tache à Finir</h1>
@@ -58,20 +94,20 @@ function TodoAfficher() {
                 readOnly
                 />
             </form>
-            <div>
+            <div className='flex flex-row w-full bg-slate-500 justify-evenly border '>
             {/* Bouton pour marquer une tâche comme complétée */}
             <button
-              className="button-complete"
+              className="button-complete mt-2 mb-3 "
               //onClick={() => toggleComplete(todo)}
             >
-              <CheckCircleIcon id="i" />
+              <CheckCircleIcon id="i " />
             </button>
             {/* Bouton pour éditer une tâche */}
-            <button className="button-edit" onClick={() => setIsEditing(true)}>
+            <button className="button-edit mt-2 mb-3  " onClick={() => setIsEditing(true)}>
               <EditIcon id="i" />
             </button>
             {/* Bouton pour supprimer une tâche */}
-            <button className="delete" >  {/* onClick={() => handleDelete(todo.id)} */}
+            <button className="delete mt-2 mb-3 "  onClick={() => handleDelete(todo.id)} >  {/* onClick={() => handleDelete(todo.id)} */}
               <DeleteIcon id="i" />
             </button>
           </div>
