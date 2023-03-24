@@ -2,6 +2,7 @@ import { supabase } from '@/utils/supabaseClient';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
+import TodoAfficher from '@/components/TodoAfficher';
 interface Todo {
   id: number;
   title: string;
@@ -37,9 +38,29 @@ export default function TodoDetails() {
   }
 
   return (
-    <div>
-      <h1>{todo.title}</h1>
-      <p>{todo.description}</p>
-    </div>
+    
+    <form className='flex flex-col mt-16  '>
+      <div className='flex flex-col '>
+              <h1 className='bg-black border text-white border-black border-solid'>
+                La Tache à Finir
+              </h1>
+              <input
+                type='text'
+                value={`Titre: ${todo.title}`}
+                className='p-8'
+                readOnly
+              />
+              <textarea
+                value={`Description: ${todo.description}`}
+                className='p-8 border mt-3'
+                readOnly
+              />
+              {/* <Link href={`/todo/${todo.id}`}>
+              <button className='button-details mt-2 mb-3 border bg-white border-red-600'>
+                Détails
+              </button>
+              </Link> */}
+              </div>
+            </form>
   );
 }

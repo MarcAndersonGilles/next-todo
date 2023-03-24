@@ -2,6 +2,7 @@ import React,{ useState }  from 'react'
 import { supabase } from '@/utils/supabaseClient';
 
 import TodoAfficher from '@/components/TodoAfficher'
+import TodoChercher from './TodoChercher';
 
 function TodoCreation() {
   const [title, setTitle] = useState('');
@@ -66,7 +67,10 @@ function TodoCreation() {
         <div>
           <TodoAfficher />
         </div>
+        <div>
 
+        </div>
+      <TodoChercher/>
         </div>
   )
 }

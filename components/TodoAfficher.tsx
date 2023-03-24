@@ -96,11 +96,15 @@ function TodoAfficher() {
 
         <div className=' bg-indigo-700 rounded-2xl mt-6 p-10 ' key={todo.id}>
           {editingId === todo.id ? (
+            
             // Afficher les champs d'édition si la tâche est en cours d'édition
             <form className='flex flex-col' onSubmit={(e) => {
               e.preventDefault();
               handleSave(todo.id);
             }}>
+              <h1 className='bg-black border text-white border-black border-solid'>
+                La Tache à Finir
+              </h1>
               <input
                 type='text'
                 value={title}
@@ -141,7 +145,7 @@ function TodoAfficher() {
                 readOnly
               />
               <Link href={`/todo/${todo.id}`}>
-              <button className='button-details mt-2 mb-3'>
+              <button className='button-details mt-2 mb-3 border bg-white border-red-600'>
                 Détails
               </button>
               </Link>
