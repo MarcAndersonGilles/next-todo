@@ -22,18 +22,20 @@ function TodoCreation() {
     }
   };
   
+
+  
   return (
-    <div className=''>
-          <div className='text-white bg-black'>Todo App</div>
-          <div className='flex flex-col bg-indigo-500 p-8 '>
+    <div className='flex flex-col'>
+          <div className='flex text-white bg-black p-2 rounded-md font-bold text-xl'>Todo App</div>
+          <div className='flex flex-col bg-indigo-500 p-10 rounded-md '>
             <div className='flex flex-col  '>
               <form className="max-w-lg mx-auto mt-4" onSubmit={handleSubmit}  > {/* onSubmit={handleSubmit}  */}
 
                 <div className="mb-4">
-
+                <label className='text-lg text-white font-bold' >Titre</label>
                   <input
                     type="text"
-                    placeholder="Title"
+                    placeholder="Écrit ton titre ici"
                     id="title"
                     name="title"
                     value={title}
@@ -42,9 +44,10 @@ function TodoCreation() {
                   />
                 </div>
                 <div className="mb-4">
+                <label className='text-lg text-white font-bold' >Description</label>
                   <textarea
                     id="description"
-                    placeholder="Description"
+                    placeholder="Écrit ta description ici"
                     name="description"
                     value={description}
                     onChange={(event) => setDescription(event.target.value)}
@@ -59,7 +62,7 @@ function TodoCreation() {
                     Soumettre
                   </button>
                 </div>
-                <p className='mt-5'>PS raffraichir pour voir la tache</p>
+               
               </form>
             </div>
           </div>
