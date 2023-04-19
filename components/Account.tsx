@@ -80,7 +80,7 @@ export default function Account({ session }: { session: Session }) {
   }
 
   return (
-    <div className="form-widget">
+    <div className="form-widget bg-gray-900 p-10 rounded-lg">
         <Avatar
       uid={user.id}
       url={avatar_url}
@@ -90,24 +90,27 @@ export default function Account({ session }: { session: Session }) {
         updateProfile({ username, website, avatar_url: url })
       }}
     />
-      <div>
-        <label htmlFor="email">Email</label>
-        <input id="email" type="text" value={session.user.email} disabled />
+      <div className=''>
+        <label htmlFor="email" className='text-white'>Email</label>
+        <input id="email" type="text" value={session.user.email} disabled
+        className='bg-gray-100 text-black' />
       </div>
       <div>
-        <label htmlFor="username">Username</label>
+        <label htmlFor="username" className='text-white'>Username</label>
         <input
           id="username"
           type="text"
+          className='bg-gray-100 text-black'
           value={username || ''}
           onChange={(e) => setUsername(e.target.value)}
         />
       </div>
       <div>
-        <label htmlFor="website">Website</label>
+        <label htmlFor="website" className='text-white'>Website</label>
         <input
           id="website"
           type="url"
+          className='bg-gray-100 text-black'
           value={website || ''}
           onChange={(e) => setWebsite(e.target.value)}
         />

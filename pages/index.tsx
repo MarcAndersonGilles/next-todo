@@ -10,7 +10,10 @@ const Home = () => {
   return (
     <div className="container" style={{ padding: '50px 0 100px 0' }}>
       {!session ? (
-        <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} theme="dark" />
+        <Auth supabaseClient={supabase}
+         appearance={{ theme: ThemeSupa }}
+         providers={['google', 'github',  'facebook']}
+         theme="dark" />
       ) : (
         <Account session={session} />
       )}
