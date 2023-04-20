@@ -110,7 +110,7 @@ export default function Account({ session }: { session: Session }) {
         <input
           id="website"
           type="url"
-          className='bg-gray-100 text-black'
+          className='bg-gray-100 text-black mb-10'
           value={website || ''}
           onChange={(e) => setWebsite(e.target.value)}
         />
