@@ -14,7 +14,7 @@ const Home = () => {
    
     <div className="container" style={{ padding: '50px 0 100px 0' }}>
        {!session ? (
-      <SignupForm  />
+      <h1>You are not log in</h1>
       ) : (
         <div>
           <h1>You are connected</h1>

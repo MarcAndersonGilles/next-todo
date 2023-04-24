@@ -7,9 +7,6 @@ import { useSession } from '@supabase/auth-helpers-react'
 import { createClient } from '@supabase/supabase-js'
 import { useRouter } from 'next/router';
 
-
-
-
 function SignupForm() {
   const session = useSession();
   const router = useRouter();
@@ -17,13 +14,11 @@ function SignupForm() {
 
 
   const handleSignIn = async (formData: any) => {
-  
     const { data: user, error } = await supabase.auth.signInWithPassword({
       email: formData.email,
       password: formData.password,
     })
     if (user) {
-      
       console.log(user)
       // localStorage.setItem("user", JSON.stringify(user.user))
       // localStorage.setItem("userSession", JSON.stringify(user.session))
@@ -36,15 +31,10 @@ function SignupForm() {
       // });
     } else if (error) {
       console.log('Error signing in')
+      return 'Error signing in'
     }
-    else{
-      console.log('User is not signed in')
-    }
+   
   };
-
-
-  console.log(session)
-
   // useEffect(() => {
   //   const { data: authListener } = supabase.auth.onAuthStateChange(
   //     async (event, session) => {
@@ -65,10 +55,6 @@ function SignupForm() {
   //     authListener?.subscription.unsubscribe();
   //   };
   // }, [session, router]);
-  
-  
-
-  console.log(session)
   if (!session)
   return (
     <>

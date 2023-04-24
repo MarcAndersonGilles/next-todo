@@ -1,0 +1,892 @@
+ <!DOCTYPE html><html lang="en"><head> <meta name="robots" content="noindex"><script src="https://assets.adobedtm.com/5dfc7d97c6fb/eaf37030b9d2/launch-316508b66bb9.min.js" async></script><script src="/js/cookies_banner.74509757c2.js" async></script><link rel="preconnect" href="//privacy-proxy.usercentrics.eu"><script rel="preload" type="application/javascript" src="https://privacy-proxy.usercentrics.eu/latest/uc-block.bundle.js"></script><meta charset="UTF-8">
+<meta http-equiv="Content-Language" content="en" />
+<link rel="apple-touch-icon" sizes="180x180" href="/images/app_apple-touch-icon.4a2b5ad294.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/app_favicon-32x32.1c9f367a65.png">
+<link rel="icon" type="image/png" sizes="194x194" href="/images/app_favicon-194x194.bfeec5ec69.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/app_android-chrome-192x192.c8b3e9d4eb.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/app_favicon-16x16.5259cc2e91.png">
+<link rel="manifest" href="/app/json/manifest.85f36463dd.json">
+<link rel="shortcut icon" href="/images/app_favicon.ico">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/app_mstile-144x144.1e6747aa5c.png">
+<meta name="msapplication-config" content="/images/app_browserconfig.xml">
+<meta name="theme-color" content="#ffffff">        <!-- Siemens analytics -->
+        <script defer type="text/plain" data-usercentrics="Google Analytics" src="/js/analytics.2d17cf4ee2.js"></script>    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- put type="text/plain" so that the script wont run before user give consent-->
+    <script type="text/plain" data-usercentrics="Google Tag Manager" defer src="https://www.googletagmanager.com/gtag/js?id=UA-218577-4"></script>
+    <script>
+       window.addEventListener('load', function () {
+           setTimeout(function () {
+                window.dispatchEvent(new CustomEvent('_getConsent.Vecta', {
+                    detail: {
+                        callback: function () {
+                            if (cookieMonster.permitted('targ')) {
+                                initFBPixel();
+                            }
+                            
+                            if (cookieMonster.permitted('fnct')) {
+                                initGoogleAnalytics();
+                            }
+                        }
+                    }
+                }));
+
+            //delay loading of analytics by 1 second for speedier loading
+            }, 500);
+       }, false);
+       
+       
+       function initFBPixel() {
+           window.fbAsyncInit=function(){
+               FB.init({appId:'1598145426866140',xfbml:true,version:'v2.8'});
+               FB.AppEvents.logPageView();
+           };
+       
+          (function(d, s, id){
+               var js, fjs = d.getElementsByTagName(s)[0];
+               if (d.getElementById(id)) {return;}
+               js = d.createElement(s); js.id = id;
+               js.src = "//connect.facebook.net/en_US/sdk.js";
+               fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+       }
+       
+       function initGoogleAnalytics() {
+           <!-- Global site tag (gtag.js) - Google Analytics --> 
+           
+          gtag('js', new Date());
+          gtag('config', 'UA-218577-4'); // radica google analytic id
+          if (cookieMonster.permitted('targ')) { 
+              
+              
+          }    
+          window.gtag = gtag; //need this otherwise the function is unavailable to everybody
+       }
+       
+      function gtag() {
+           window.dataLayer = window.dataLayer || [];
+           dataLayer.push(arguments);
+      }
+       
+    </script><link rel="canonical" href="https://vecta.io/app/link" /><meta name="Description" content="Vecta: Real time collaborative diagramming for teams" />
+<meta property="og:title" content="Vecta: Real time collaborative diagramming for teams" />
+<meta property="og:url" content="https://vecta.io/app/link?src=https://www.vectorlogo.zone/logos/facebook/facebook-official.svg" />
+<meta property="og:image" content="https://vecta.io/images/default_unfurl.png" />
+<meta property="fb:app_id" content="168250923710851" />
+<meta property="og:description" content="Vecta: Real time collaborative diagramming for teams" />
+<meta property="og:type" content="website" /><title>Vecta</title><link rel="stylesheet" href="/app/css/index.e658f7d561.css"><link rel="stylesheet" href="/app/css/codemirror.6053ce35d8.css"> </head><body>     <div id="preload.id" data-name="find-replace">
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="650" height="290" stroke="#000" stroke-linecap="round" stroke-linejoin="round" fill="#fff" fill-rule="evenodd" font-family="Roboto" font-size="14" text-anchor="middle"><style><![CDATA[svg text{white-space:pre}.B{fill:none}.C{stroke:none}.D{stroke:#646464}.E{stroke:#a2a2a2}.F{stroke-width:5}.G{fill:#ccf2ff}.H{stroke:#ccf2ff}.I{stroke-width:3}.J{fill:#646464}.K{fill:#4f4f4f}.L{text-anchor:start}.M{font-weight:bold}]]></style><defs><style>@font-face{font-family:"Roboto";src:url(data:application/font-woff;charset=utf-8;base64,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) format("woff"); font-weight:normal;font-style:normal;} @font-face{font-family:"Roboto";src:url(data:application/font-woff;charset=utf-8;base64,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) format("woff"); font-weight:bold;font-style:normal;}</style><filter id="A" x="-1.1905%" y="-12.5%" width="102.381%" height="127.2727%"><feGaussianBlur in="SourceAlpha" stdDeviation="2"/><feOffset dy="1" result="B"/><feFlood flood-color="#000" flood-opacity=".1471"/><feComposite in2="B" operator="in" result="C"/><feMerge><feMergeNode in="C"/><feMergeNode in="SourceGraphic"/></feMerge></filter><path d="M0 0l3 10h-6z" id="B" class="C"/></defs><path fill="#c1c1c1" stroke="#c1c1c1" d="M30.5 59.5h589v220h-589z"/><path stroke="#fff" d="M44.5238 69.5h560.9523v200H44.5238z"/><g transform="translate(492.759 119.5)"><path d="M0 0l.1161 13.2505" class="B D I"/><use transform="matrix(-1.4999424 .01314478 -.01314478 -1.4999424 .72307792 54.99673171)" x=".1607" xlink:href="#B" y="18.3333" class="J"/></g><rect height="44" rx="2" stroke="silver" width="625" filter="url(#A)" transform="translate(9.5 4.5)"/><rect height="26" rx="3" stroke="#2196f3" width="180" x="19.5" y="13.5"/><text class="C K L"><tspan x="31.5" y="31.12">Auto</tspan></text><rect fill="#9ed1fa" height="26" rx="2" stroke="#9ed1fa" width="26" x="209.5" y="13.5"/><rect fill="#2196f3" height="26" rx="2" stroke="#2196f3" width="26" transform="matrix(-1 0 0 -1 271.5 39.5)"/><rect height="26" rx="3" stroke="silver" width="180" x="281.5" y="13.5"/><text fill="silver" class="C L"><tspan x="293.5" y="31.12">Replace with</tspan></text><text fill="gray" font-size="13" class="C L"><tspan x="146.5" y="30.79">3 found</tspan></text><g transform="translate(403.5334 104.5)"><path d="M0 0h22.2118" class="B D I"/><use transform="matrix(0 1.5 -1.5 0 36.46185 -36.46185)" x="24.3079" xlink:href="#B" class="J"/></g><g transform="translate(242.2594 104.5)"><path d="M0 0h34.8335" class="B D I"/><use transform="matrix(0 1.5 -1.5 0 49.08345 -49.08345)" x="32.7223" xlink:href="#B" class="J"/></g><path d="M97.3048 203.5h147.25M172 219.5h72.5" class="B E F"/><text class="C K L M"><tspan x="96.5" y="224.12">automated</tspan></text><path d="M97.3048 233.5h147.25m-147.25 16H244.5" class="B E F"/><g transform="translate(346.3172 189.2638)"><path d="M0 0l.1681 15.987" class="B D I"/><use transform="matrix(-1.49991704 .01577574 -.01577574 -1.49991704 .9539819 60.46748327)" x=".212" xlink:href="#B" y="20.1575" class="J"/></g><path d="M100.619 89.5h141.6404v30H100.619z" class="G H"/><text class="C K M"><tspan x="171.4392" y="109.12">Auto-update</tspan></text><path d="M291.3429 89.5h112.1905v30H291.3429z" class="G H"/><path d="M315.1833 104.5h61.7048" class="B E F"/><g transform="translate(372.4703 162.5)"><path d="M59.9139 0H14.25" class="B D I"/><use transform="matrix(0 -1.5 1.5 0 0 0)" xlink:href="#B" class="J"/></g><path d="M431.581 147.5h122.0071v30H431.581z" class="G H"/><text class="C K M"><tspan x="492.5846" y="167.12">Automation</tspan></text><path d="M318.9904 162.5l27.0453-27.0453L373.0811 162.5l-27.0453 27.0453z" class="G H"/><path d="M334.8167 156.5h21.0357m-15.4262 13h11.219" class="B E F"/><path d="M100.619 147.5h141.6404v30H100.619z" class="G H"/><path d="M124.4595 162.5h88.35" class="B E F"/><path d="M290.6977 219.5h112.1905v30H290.6977z" class="G H"/><g class="B"><path d="M314.5382 234.5h61.7048" class="E F"/><path d="M256.5 31.5l5-5-5-5m-32 10l-5-5 5-5" stroke="#fff" stroke-width="2"/></g><path d="M439.9952 89.5h112.1905v30H439.9952z" class="G H"/><path d="M465.2381 104.5h60.3024" class="B E F"/><g transform="translate(242.5031 162.5)"><path d="M76.5055 0H14.25" class="B D I"/><use transform="matrix(0 -1.5 1.5 0 0 0)" xlink:href="#B" class="J"/></g><g fill="#9ed1fa" stroke="#9ed1fa"><rect height="26" rx="2" width="60" x="469.5" y="13.5"/><text font-size="12" fill="#fff" class="C"><tspan x="499.5" y="30.46">Replace</tspan></text><rect height="26" rx="2" width="70" x="539.5" y="13.5"/><text font-size="12" fill="#fff" class="C"><tspan x="574.5" y="30.46">Replace all</tspan></text></g><g stroke-width="2" class="B D"><path d="M617.4926 22.4926L624.5 29.5"/><path d="M624.4999 22.4927l-7.0072 7.0072"/></g></svg>
+            <h1>Quickly search and replace text with Ctrl + F</h1>
+            <p><span id="preload_mssg.id">Loading</span><span id="loading.id"><span></span></span></p>
+                <div class="Logo.cls">
+            <svg width="150" height="50">
+                <use xlink:href="#logo_text.sym" />
+            </svg>
+        </div><div class="Created.cls">Diagramming for teams</div>
+            </div>
+        </div>
+    </div> <div id="container.id"><div id="viewport.id" class="Preloading.cls" oncontextmenu="return false;"><svg id="canvas.id" xmlns:v="http://vecta.io" v:defaults={"paper":"LETTER","unit":"px"}></svg></div></div><div id="header.id"> <div class="Logo.cls"><a href="/" id="header_logo.id" target="_blank"><img loading="auto" src="/images/logo.cfef3c7f07.svg" alt="Vecta Logo"></a></div> <input id="file_name.icon" class="Disable.cls" type="text" autocomplete="off"> <svg class="Right.cls RightLogo.cls" width="89" height="15" stroke="none" stroke-linecap="round" stroke-linejoin="round" fill="#fff"><path d="M77.97 13.52v-2.66c1.47.48 2.75.7 3.88.7 1.55 0 2.33-.43 2.33-1.28 0-.31-.11-.58-.34-.8-.23-.23-.83-.54-1.78-.95-1.71-.73-2.83-1.35-3.35-1.87-.67-.68-1.01-1.54-1.01-2.57a3.5 3.5 0 0 1 1.47-3.05C80.14.35 81.4 0 82.96 0c.86 0 2.31.2 3.94.53v2.59a10.1 10.1 0 0 0-3.58-.82c-1.46 0-2.19.42-2.19 1.25 0 .31.14.57.44.77.24.15.92.49 2.02 1.01 1.59.73 2.65 1.36 3.17 1.9a3.4 3.4 0 0 1 .94 2.49 3.7 3.7 0 0 1-1.84 3.35c-.99.62-2.28.93-3.86.93-1.34 0-2.67-.15-4.03-.48h0zm-78 0v-2.66c1.47.48 2.75.7 3.88.7 1.55 0 2.33-.43 2.33-1.28 0-.31-.11-.58-.34-.8-.23-.23-.83-.54-1.78-.95C2.35 7.8 1.23 7.18.71 6.66.04 5.98-.3 5.12-.3 4.09a3.5 3.5 0 0 1 1.47-3.05C2.14.35 3.4 0 4.96 0c.86 0 2.31.2 3.94.53v2.59a10.1 10.1 0 0 0-3.58-.82c-1.46 0-2.19.42-2.19 1.25 0 .31.14.57.44.77.24.15.92.49 2.02 1.01 1.59.73 2.65 1.36 3.17 1.9a3.4 3.4 0 0 1 .94 2.49 3.7 3.7 0 0 1-1.84 3.35c-.99.62-2.28.93-3.86.93-1.34 0-2.67-.15-4.03-.48h0zM12 0h0 4v14h-4zm7 14V0h10v3h-6v2.38h5V8h-5v3h6v3H19zm13 0V0h4.9l3.41 8.57L43.8 0H49v14h-4V3.92L40.91 13h-2.35L35 3.88v10.1L32 14zm32-.01V0h4.33l4.66 8.94V0H76v14l-4.63-.01L67 4.25v9.74h-3zM51 14V0h10v3h-6v2.38h5V8h-5v3h6v3H51z"/></svg> <button id="demo_signup.id" class="Right.cls Hide.cls">Sign up</button></div><div id="bar_top.id" class="Toolbar.cls"><div id="bar_app.id"></div></div><div id="bar_left.id"><ul class="TabBar.cls StencilTab.cls"><li><a data-tab="stencils.tab" class="Active.cls Tab.cls StencilTab.cls"><svg class="Icon.cls" viewBox="0 0 20 20"><use xlink:href="#stencils.sym"></use></svg> <span>Stencils</span></a></li><li><a data-tab="plugins.tab" class="Tab.cls PluginTab.cls"><svg class="Icon.cls" viewBox="0 0 20 20"><use xlink:href="#code.sym"></use></svg> <span>Plugins</span></a></li></ul><section class="TabGroup.cls"><div id="stencils.tab"><div id="sten_search.id"><input type="text" placeholder="Find symbols"></div><div id="sten_port.id"><div class="Loading.cls Help.cls"><div id="loading.id"><span></span></div>Getting stencils</div><div id="stencils.id"></div></div></div><div id="plugins.tab" style="left: -99999px;"><div id="plug_search.id"><input type="text" data-menu="plugin_search.menu" class="Menu.cls" placeholder="Find plugins"></div><div id="plug_port.id"><div class="Loading.cls Help.cls"><div id="loading.id"><span></span></div>Getting plugins</div><div id="active_plugins.id" class="Expand.cls Hide.cls"><label>No auto run plugins for drawing</label><div class="PContent.cls"></div></div><div id="personal_plugins.id" class="Plugins.cls Hide.cls"><div class="PHead.cls"><svg class="Menu.cls" data-menu="plugins.menu"><use xlink:href="#dot_menu.sym"></use></svg><div class="Name.cls">Personal plugins</div><svg class="Toggle.cls"><use class="UpArrow.cls" xlink:href="#up_arrow.sym"/><use class="DownArrow.cls" xlink:href="#down_arrow.sym"/></svg></div><div class="PContent.cls"><div class="PCategories.cls"></div><div class="Help.cls Preload.cls"><div><div id="loading.id"><span></span></div> Getting plugins </div></div></div></div><div id="team_plugins.id" class="Plugins.cls Hide.cls"><div class="PHead.cls"><svg class="Menu.cls" data-menu="plugins.menu"><use xlink:href="#dot_menu.sym"></use></svg><div class="Name.cls">Team plugins</div><svg class="Toggle.cls"><use class="UpArrow.cls" xlink:href="#up_arrow.sym"/><use class="DownArrow.cls" xlink:href="#down_arrow.sym"/></svg></div><div class="PContent.cls"><div class="PCategories.cls"></div><div class="Help.cls Preload.cls"><div><div id="loading.id"><span></span></div> Getting plugins </div></div></div></div><div id="public_plugins.id" class="Plugins.cls Hide.cls"><div class="PHead.cls"><svg class="Menu.cls" data-menu="plugins.menu"><use xlink:href="#dot_menu.sym"></use></svg><div class="Name.cls">Public plugins</div><svg class="Toggle.cls"><use class="UpArrow.cls" xlink:href="#up_arrow.sym"/><use class="DownArrow.cls" xlink:href="#down_arrow.sym"/></svg></div><div class="PContent.cls"><div class="PCategories.cls"></div><div class="Help.cls Preload.cls"><div><div id="loading.id"><span></span></div> Getting plugins </div></div></div></div></div></div></section></div><div id="bar_right.id"></div>  <div id="bar_bottom.id" class="Toolbar.cls Active.cls"><div id="vecta.io">  <h1 ><a href="/" target="_blank">vecta.io</a></h1></div></div><div id="edit_plugin.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Edit plugin</div><div class="Content.cls"> <div class="RightInput.cls">
+    <label>Name</label>
+    <input id="plugin_name.id" type="text"  />
+    
+</div><div class="RightInput.cls">
+    <label>Description</label>
+    <textarea id="plugin_desc.id" type="text" ></textarea>
+</div><div class="RightInput.cls">
+    <label>Category</label>
+    <input id="plugin_cat.id" placeholder="General, Spreadsheet, Files" class="Menu.cls" type="text"  />
+    
+</div> <div class="Help.cls">Separate with comma</div></div><div class="Button.cls"> <button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Cancel</button> </div></div></div><div id="page_setup.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Page setup</div><div class="Content.cls"><div><label>Size</label> <select id="paper_type.id"></select></div><div class="CheckBox.cls"><input data-value="fit_to_drawing" type="checkbox"> <label id="fit_to_drawing.id">Fit to drawing</label></div><div id="orient.id"><label>Orientation:</label> <select id="page_orient.id"><option value="landscape" selected="selected">Landscape</option><option value="portrait">Portrait</option></select></div><div id="custom_size.id"><label>Custom size (width x height)</label> <input id="page_width.id" type="text" placeholder="Width"> <span>x</span> <input id="page_height.id" type="text" placeholder="Height"><div class="Help.cls">Accepts: m, in, cm, mm, px. eg: 3 mm, 3 px, 3</div></div><div id="margin.id"><label>Page Margin</label><div class="Row.cls"><div><label>Top:</label> <input id="page_margin_top.id" type="text"></div><div><label>Left:</label> <input id="page_margin_left.id" type="text"></div><div><label>Bottom:</label> <input id="page_margin_bottom.id" type="text"></div><div><label>Right:</label> <input id="page_margin_right.id" type="text"></div></div></div><div id="scaling.id"><label>Scale</label> <input id="scale_from.id" type="text" placeholder="Scale"> <span>=</span> <input id="scale_to.id" type="text" placeholder="Scale"></div><div id="units.id"><label>Measurement units</label> <select id="page_units.id"></select></div></div><div class="Button.cls"><div class="Left.cls"><button id="custom_page_data.id" type="button" class="Custom.cls"><svg class="Icon.cls" viewBox="0 0 20 20"><use xlink:href="#code.sym"></use></svg> Custom JSON </button></div> <button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Cancel</button> </div></div></div><div id="export_records.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Export Records</div><div class="Content.cls"><textarea></textarea></div><div class="Button.cls"> <button type="button" class="Default.cls">OK</button> </div></div></div><div id="publish.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Publish to the Web</div><div class="Content.cls"><div><input type="text" class="Copy.cls" readonly="readonly"> <button id="copy_link.id">Copy link</button></div></div><div class="Button.cls"><button type="button" id="remove_publish.id" class="Error.cls">Remove</button> <button type="button" id="save_publish.id">Publish</button> <button type="button" class="Cancel.cls">Close</button> </div></div></div><div id="edit_link.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Edit hyperlink</div><div class="Content.cls"><div id="link_to_radio.id"><label>Link to</label><div class="Inline.cls"><div data-value="url" class="Radio.cls Active.cls"><span>URL</span></div><div data-value="page" class="Radio.cls"><span>Page</span></div></div></div><div><label>URL</label> <input data-value="edit_url" type="text" placeholder="https://vecta.io"></div><div class="Hide.cls"><label>Pages</label> <select id="link_pages.id"></select></div><div><label>Description</label> <input type="text" data-value="desc"></div><div id="open_in_radio.id"><label>Open in</label><div class="Inline.cls"><div data-value="cur_tab" class="Radio.cls Active.cls"><span>Current tab</span></div><div data-value="new_tab" class="Radio.cls"><span>New tab</span></div></div></div><div class="Help.cls"></div></div><div class="Button.cls"> <button type="button" class="Default.cls">Save</button> <button type="button" class="Cancel.cls">Cancel</button> </div></div></div><div id="doc_setup.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Document setup</div><div class="Content.cls"> <div>
+    <label>Title</label>
+    <input id="title.id" placeholder="Untitled drawing" type="text"  />
+    
+</div><div>
+    <label>Description</label>
+    <textarea type="text" ></textarea>
+</div> <div class="Help.cls">The title and description are used on your publication, and on social media.<br />Publishing drawings will make your content visible to anyone on the Internet.</div> <div>
+    <label>Location</label>
+    <input id="location.id" class="Disable.cls" type="text"  />
+    
+</div><div>
+    <label>Revision</label>
+    <input id="revision.id" type="text"  />
+    
+</div> </div><div class="Button.cls"><div class="Left.cls"><button id="custom_doc_data.id" type="button" class="Custom.cls"><svg class="Icon.cls" viewBox="0 0 20 20"><use xlink:href="#code.sym"></use></svg> Custom JSON </button></div> <button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Cancel</button> </div></div></div><div id="find_text.id"><input type="text" placeholder="Search"><div id="find_results.id"></div><button id="find_prev.id" type="button"><svg viewBox="0 0 20 20"><use xlink:href="#left_arrow.sym" x="-4" y="1"></use></svg></button> <button id="find_next.id" type="button"><svg viewBox="0 0 20 20"><use xlink:href="#right_arrow.sym" y="2"></use></svg></button> <input type="text" placeholder="Replace with"> <button id="replace_one.id" type="button">Replace</button> <button id="replace_all.id" type="button">Replace All</button><div id="close_search.icon"><svg><use xlink:href="#close.sym" href="#close.sym"></use></svg></div></div><div id="properties.dialog" class="Dialog.cls Collapsible.cls StackBottom.cls"><div class="CollapseIcon.cls"><svg><use xlink:href="#properties.sym"/></svg></div><div class="Title.cls">Properties<div class="Icon.cls Close.cls"><svg><use xlink:href="#close.sym"></use></svg></div><div class="Icon.cls Min.cls"><svg><use xlink:href="#down_arrow.sym"></use></svg></div><div class="Icon.cls Max.cls"><svg><use xlink:href="#up_arrow.sym"></use></svg></div></div><div class="StackContainer.cls" id="prop_content.id"><div class="Stack.cls" id="shape_prop.stack"><div class="Title.cls"> Shape <div class="Icon.cls Plus.cls Hide.cls AddField.tip" data-menu="fields.menu"><svg><use xlink:href="#plus.sym"></use></svg></div><div class="Icon.cls Min.cls"><svg><use xlink:href="#down_arrow.sym"></use></svg></div><div class="Icon.cls Max.cls"><svg><use xlink:href="#up_arrow.sym"></use></svg></div></div><div class="Content.cls"><p class="Muted.cls">Please select a shape</p></div></div><div class="Stack.cls" id="layers.stack"><div class="Title.cls"> Layers <div class="Icon.cls Plus.cls AddLayer.tip"><svg><use xlink:href="#plus.sym"></use></svg></div><div class="Icon.cls Min.cls"><svg><use xlink:href="#down_arrow.sym"></use></svg></div><div class="Icon.cls Max.cls"><svg><use xlink:href="#up_arrow.sym"></use></svg></div></div><div class="Content.cls"></div></div><div class="Stack.cls" id="filters.stack"><div class="Title.cls"> Effects <div class="Icon.cls Plus.cls Hide.cls AddEffect.tip" data-menu="filters.menu"><svg><use xlink:href="#plus.sym"></use></svg></div><div class="Icon.cls Min.cls"><svg><use xlink:href="#down_arrow.sym"></use></svg></div><div class="Icon.cls Max.cls"><svg><use xlink:href="#up_arrow.sym"></use></svg></div></div><div class="Content.cls"><p class="Muted.cls">Please select a shape</p><p class="Mssg.cls Hide.cls">Please add an effect</p><div id="drop.filter" class="Filter.cls Hide.cls"><div><span class="Muted.cls">Drop shadow</span><svg class="Icon.cls DeleteFilter.cls Delete.tip"><use xlink:href="#delete.sym"/></svg></div><label data-name="deviation" class="NumInput.cls"><span>Size</span><input type="text" data-min="0"><div class="Arrows.cls"><span class="UpArrow.cls Icon.cls"></span><span class="DownArrow.cls Icon.cls"></span></div></label> <label data-name="x" class="NumInput.cls"><span>Offset X</span><input type="text"><div class="Arrows.cls"><span class="UpArrow.cls Icon.cls"></span><span class="DownArrow.cls Icon.cls"></span></div></label> <label data-name="y" class="NumInput.cls"><span>Offset Y</span><input type="text"><div class="Arrows.cls"><span class="UpArrow.cls Icon.cls"></span><span class="DownArrow.cls Icon.cls"></span></div></label> <label data-name="color"><span>Color</span><input type="text" spellcheck="false"> <svg class="Palette.cls Palette.tip Drop.cls" data-mode="slider"><use xlink:href="#palette.sym"></use></svg></label><div class="FilterRange.cls"><label data-name="opacity">Opacity : <span>0%</span></label><div class="HRange.cls" data-min="0" data-max="1" data-format="0%" data-tips="0" data-value="0.5"></div></div></div><div id="inner.filter" class="Filter.cls Hide.cls"><div><span class="Muted.cls">Inner Shadow</span><svg class="Icon.cls DeleteFilter.cls Delete.tip"><use xlink:href="#delete.sym"/></svg></div><label data-name="deviation" class="NumInput.cls"><span>Size</span><input type="text" data-min="0"><div class="Arrows.cls"><span class="UpArrow.cls Icon.cls"></span><span class="DownArrow.cls Icon.cls"></span></div></label> <label data-name="x" class="NumInput.cls"><span>Offset X</span><input type="text"><div class="Arrows.cls"><span class="UpArrow.cls Icon.cls"></span><span class="DownArrow.cls Icon.cls"></span></div></label> <label data-name="y" class="NumInput.cls"><span>Offset Y</span><input type="text"><div class="Arrows.cls"><span class="UpArrow.cls Icon.cls"></span><span class="DownArrow.cls Icon.cls"></span></div></label> <label data-name="color"><span>Color</span><input type="text" spellcheck="false"> <svg class="Palette.cls Palette.tip Drop.cls" data-mode="slider"><use xlink:href="#palette.sym"></use></svg></label><div class="FilterRange.cls"><label data-name="opacity">Opacity : <span>0%</span></label><div class="HRange.cls" data-min="0" data-max="1" data-format="0%" data-tips="0" data-value="0.5"></div></div></div><div id="bevel.filter" class="Filter.cls Hide.cls"><div><span class="Muted.cls">Bevel</span><svg class="Icon.cls DeleteFilter.cls" Delete.tip><use xlink:href="#delete.sym"/></svg></div><label data-name="deviation" class="NumInput.cls"><span>Depth</span><input type="text" data-min="0"><div class="Arrows.cls"><span class="UpArrow.cls Icon.cls"></span><span class="DownArrow.cls Icon.cls"></span></div></label> <label data-name="surface_scale" class="NumInput.cls"><span>Sharpness</span><input type="text" data-min="0"><div class="Arrows.cls"><span class="UpArrow.cls Icon.cls"></span><span class="DownArrow.cls Icon.cls"></span></div></label> <label data-name="color"><span>Color</span><input type="text" spellcheck="false"> <svg class="Palette.cls Palette.tip Drop.cls" data-mode="slider"><use xlink:href="#palette.sym"></use></svg></label></div><div id="blur.filter" class="Filter.cls Hide.cls"><div><span class="Muted.cls">Blur</span><svg class="Icon.cls DeleteFilter.cls" Delete.tip><use xlink:href="#delete.sym"/></svg></div><label data-name="deviation" class="NumInput.cls"><span>Size</span><input type="text" data-min="0"><div class="Arrows.cls"><span class="UpArrow.cls Icon.cls"></span><span class="DownArrow.cls Icon.cls"></span></div></label></div><div id="glow.filter" class="Filter.cls Hide.cls"><div><span class="Muted.cls">Glow</span><svg class="Icon.cls DeleteFilter.cls Delete.tip"><use xlink:href="#delete.sym"/></svg></div><label data-name="deviation" class="NumInput.cls"><span>Size</span><input type="text" data-min="0"><div class="Arrows.cls"><span class="UpArrow.cls Icon.cls"></span><span class="DownArrow.cls Icon.cls"></span></div></label> <label data-name="color"><span>Color</span><input type="text" spellcheck="false"> <svg class="Palette.cls Palette.tip Drop.cls" data-mode="slider"><use xlink:href="#palette.sym"></use></svg></label><div class="FilterRange.cls"><label data-name="opacity">Opacity : <span>0%</span></label><div class="HRange.cls" data-min="0" data-max="1" data-format="0%" data-tips="0" data-value="0.5"></div></div></div></div></div><div class="Stack.cls Hide.cls" id="icon_preview.stack"><div class="Title.cls"> Preview <div class="Icon.cls Min.cls"><svg><use xlink:href="#down_arrow.sym"></use></svg></div><div class="Icon.cls Max.cls"><svg><use xlink:href="#up_arrow.sym"></use></svg></div></div><div class="Content.cls"></div></div><div class="Stack.cls Hide.cls" id="color_separations.stack"><div class="Title.cls"> Color Separations <div class="Icon.cls Min.cls"><svg><use xlink:href="#down_arrow.sym"></use></svg></div><div class="Icon.cls Max.cls"><svg><use xlink:href="#up_arrow.sym"></use></svg></div></div><div class="Content.cls">         <div >
+            <label>Color mode</label>
+            <select   data-value="color_mode"><option value="0">RGB</option><option value="1">CMYK</option></select>
+            
+        </div> <div id="color_separation_rgb.id" class="Hide.cls"> <div class="CheckBox.cls">
+    <input  data-value="red_color" type="checkbox">
+    <label for="">Red</label>
+</div><div class="CheckBox.cls">
+    <input  data-value="green_color" type="checkbox">
+    <label for="">Green</label>
+</div><div class="CheckBox.cls">
+    <input  data-value="blue_color" type="checkbox">
+    <label for="">Blue</label>
+</div> </div><div id="color_separation_cmyk.id" class="Hide.cls"> <div class="CheckBox.cls">
+    <input  data-value="cyan_color" type="checkbox">
+    <label for="">Cyan</label>
+</div><div class="CheckBox.cls">
+    <input  data-value="magenta_color" type="checkbox">
+    <label for="">Magenta</label>
+</div><div class="CheckBox.cls">
+    <input  data-value="yellow_color" type="checkbox">
+    <label for="">Yellow</label>
+</div><div class="CheckBox.cls">
+    <input  data-value="black_color" type="checkbox">
+    <label for="">Black</label>
+</div> </div></div></div><div class="Stack.cls Hide.cls" id="custom_menu.stack"><div class="Title.cls"> Custom Menu <div class="Icon.cls Plus.cls Hide.cls AddCustomMenu.tip"><svg><use xlink:href="#plus.sym"></use></svg></div><div class="Icon.cls Min.cls"><svg><use xlink:href="#down_arrow.sym"></use></svg></div><div class="Icon.cls Max.cls"><svg><use xlink:href="#up_arrow.sym"></use></svg></div></div><div class="Content.cls"><p class="Muted.cls">Please select a shape</p><p class="Mssg.cls Hide.cls">Please add a custom menu</p><div class="Subtitle.cls Hide.cls"><div class="Icon.cls ListCustomMenu.tip" data-menu="custom_menu.menu"><svg><use xlink:href="#dot_menu.sym"></use></svg></div><span></span><div class="Icon.cls Delete.cls Delete.tip"><svg><use xlink:href="#delete.sym"></use></svg></div></div><div class="Fields.cls Hide.cls"><label><span>Title</span><input type="text" spellcheck="false"> <button class="FormulaField.cls FormulaField.tip" tabindex="-1"><svg><use xlink:href="#formula.sym"></use></svg></button></label> <label><span>Action</span><input type="text" spellcheck="false"> <button class="FormulaField.cls FormulaField.tip" tabindex="-1"><svg><use xlink:href="#formula.sym"></use></svg></button></label> <label><span>Disabled</span><input type="text" spellcheck="false"> <button class="FormulaField.cls FormulaField.tip" tabindex="-1"><svg><use xlink:href="#formula.sym"></use></svg></button></label> <label><span>Selected</span><input type="text" spellcheck="false"> <button class="FormulaField.cls FormulaField.tip" tabindex="-1"><svg><use xlink:href="#formula.sym"></use></svg></button></label></div></div></div></div></div><div id="chat_box.dialog" class="Dialog.cls StickyTop.cls"><div class="Title.cls"> Chat box <div class="Icon.cls Close.cls"><svg><use xlink:href="#close.sym"></use></svg></div></div><div class="Content.cls"><div id="messages.id"></div><div id="text_container.id"><input type="text" data-menu="emoji.menu" class="Left.cls"><div id="emoji_chat.id" class="Right.cls Menu.cls" data-menu="emoji.menu"></div></div></div></div><div id="videos.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Button.cls"><button id="playlist.id" class="Menu.cls" data-menu="videos.menu">Playlists <svg class="Playlist.tip"><use xlink:href="#down_arrow.sym"/></svg></button> <button id="minimize.id"><svg class="Minimize.tip"><path fill="none" d="M 0 4.5 L 1e-13 1e-13 L 13 0 L 13 13 L 8.5 13" stroke-width="2" stroke-linejoin="miter" stroke-linecap="square" transform="translate(3 3)"></path><rect height="5" stroke-linejoin="miter" stroke-width="2" width="5" stroke="#8e8e8e" style="stroke: var(--muted-color);" transform="translate(3 11)"></rect></svg></button> <button id="maximize.id" class="Hide.cls"><svg class="Maximize.tip"><path fill="none" d="M 0 4.5 L 1e-13 1e-13 L 13 0 L 13 13 L 8.5 13" stroke-width="2" stroke-linejoin="miter" stroke-linecap="square" stroke="#8e8e8e" style="stroke: var(--muted-color);" transform="translate(3 3)"></path><rect height="5" stroke-linejoin="miter" stroke-width="2" width="5" transform="translate(3 11)"></rect></svg></button> <button class="Cancel.cls"><svg class="Close.tip"><use xlink:href="#close.sym"/></svg></button></div><div class="Content.cls"></div></div></div><div id="get_color.drop" class="Dropdown.cls"><svg id="library.id"><defs></defs></svg><div><div id="more.icon" class="Icon.cls"><span>More</span><svg><use xlink:href="#right_arrow.sym"></use></svg></div><svg id="colors.id"></svg> <svg id="recent.id"></svg> <svg id="gradients.id"></svg></div><div id="more.id" class="Hide.cls"><div id="more_colors.id" class="Hide.cls"><svg id="color_preview.id"><defs><pattern id="Checker1.pat" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="10" height="10" fill="#ededed"></rect><rect x="10" y="10" width="10" height="10" fill="#ededed"></rect></pattern></defs><rect x="0%" y="0%" width="100%" height="100%" fill="url(#Checker1.pat)"></rect><rect x="0%" y="0%" width="100%" height="100%" id="color_preview_rect.id"></rect></svg><div class="ColorBar.cls"><input id="color_input.id" type="text" value=""> <svg class="Palette.cls Palette.tip Drop.cls"><use xlink:href="#palette.sym"/></svg>     <div id="color_formats.id">
+        <div id="color_formats.icon" class="Icon.cls">
+            <svg>
+                <use xlink:href="#menu.sym"></use>
+            </svg>
+        </div>
+        <div id="color_formats.drop" class="Dropdown.cls">
+            <div id="rgb_check.id" class="CheckBox.cls">
+                <input data-value="rgb" type="checkbox">
+                <label>RGB</label>
+            </div>
+            <div id="hsl_check.id" class="CheckBox.cls">
+                <input data-value="hsl" type="checkbox">
+                <label>HSL</label>
+            </div>
+            <div id="cmyk_check.id" class="CheckBox.cls">
+                <input data-value="cmyk" type="checkbox">
+                <label>CMYK</label>
+            </div>
+            <div id="pantone_check.id" class="CheckBox.cls Hide.cls">
+                <input data-value="pantone" type="checkbox">
+                <label>Pantone</label>
+            </div>
+        </div>
+    </div> </div>     <div id="hsl_color.id" class="HSL.cls">
+        <div id="range_color.id" class="HRange.cls" data-min="0" data-max="359" data-format="0&deg;">
+            <svg width="100%" height="14">
+                <rect class="HRTrack.cls" y="4" height="6" rx="3" stroke="none" fill="#c0c0c0"></rect>
+                <circle class="HRThumb.cls" cx="7" cy="7" r="6" fill="transparent" stroke="#197fa2"></circle>
+            </svg>        
+        </div>
+        <div id="columns_color.id" class="RadioGroup.cls">
+            <div class="hsl_clm.cls Hide.cls">
+                <div id="hue_color.id" class="Radio.cls Active.cls"><span>H:</span><input type="number" min="0" max="359" data-name="hue">&deg;</div>
+                <div id="sat_color.id" class="Radio.cls"><span>S:</span><input type="number" min="0" max="100" data-name="sat">%</div>
+                <div id="lum_color.id" class="Radio.cls"><span>L:</span><input type="number" min="0" max="100" data-name="lum">%</div>
+            </div>
+            <div class="rgb_clm.cls Hide.cls">
+                <div id="r_color.id" class="Radio.cls"><span>R:</span><input type="number" min="0" max="255" data-name="red"></div>
+                <div id="g_color.id" class="Radio.cls"><span>G:</span><input type="number" min="0" max="255" data-name="green"></div>
+                <div id="b_color.id" class="Radio.cls"><span>B:</span><input type="number" min="0" max="255" data-name="blue"></div>
+            </div>
+            <div class="cmyk_clm.cls Hide.cls">
+                <div id="c_color.id" class="Radio.cls"><span>C:</span><input type="number" min="0" max="100" data-name="cyan">%</div>
+                <div id="m_color.id" class="Radio.cls"><span>M:</span><input type="number" min="0" max="100" data-name="magenta">%</div>
+                <div id="y_color.id" class="Radio.cls"><span>Y:</span><input type="number" min="0" max="100" data-name="yellow">%</div>
+                <div id="k_color.id" class="Radio.cls"><span>K:</span><input type="number" min="0" max="100" data-name="black">%</div>
+            </div>
+            <div class="pantone_clm.cls Hide.cls">
+                <div id="pantone_color.id" class="Radio.cls"></div>
+            </div>
+        </div>
+    </div> </div><div id="more_gradients.id" class="Hide.cls"><svg id="gradient_preview.id"><defs><linearGradient id="preview_linear.grad" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#000"></stop><stop offset="100%" stop-color="#fff"></stop></linearGradient><radialGradient id="preview_radial.grad" fx="50%" fy="50%" cx="50%" cy="50%" r="50%"><stop offset="10%" stop-color="#fff"></stop><stop offset="100%" stop-color="#000"></stop></radialGradient><pattern id="Checker.pat" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="10" height="10" fill="#ededed"></rect><rect x="10" y="10" width="10" height="10" fill="#ededed"></rect></pattern></defs><rect x="0%" y="0%" width="100%" height="100%" fill="url(#Checker.pat)"></rect><rect x="0%" y="0%" width="100%" height="100%" fill="url(#preview_linear.grad)" id="grad_preview_rect.id"></rect><circle id="radial_center.id" r="6" cx="50%" cy="50%" fill="transparent" stroke-width="2"></circle></svg><div id="stops.id"><div id="stop_0.id" class="HRange.cls" data-min="0" data-max="1" data-format="0%" data-value="0" data-thumb="1"><svg><defs><linearGradient id="stops.grad" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="0%" stop-color="#000"></stop><stop offset="100%" stop-color="#fff"></stop></linearGradient></defs><rect class="HRTrack.cls" y="0" height="6" rx="3" fill="url(#stops.grad)"></rect><circle class="HRThumb.cls" cx="7" cy="13" r="6"></circle></svg></div><div id="stop_1.id" class="HRange.cls" data-min="0" data-max="1" data-format="0%" data-value="1" data-thumb="1"><svg><rect class="HRTrack.cls" y="0" height="6" rx="3" fill="none"></rect><circle class="HRThumb.cls" cx="7" cy="13" r="6"></circle></svg></div><div id="gradient_bar.id"><span>1/2:</span> <input id="stop_input.id" type="text" value=""> <svg class="Palette.cls Palette.tip Drop.cls"><use xlink:href="#palette.sym"/></svg><div class="Icons.cls Right.cls"><div id="swap_color.id"></div><div id="remove_stop.id"></div></div>     <div id="gradient_formats.id">
+        <div id="gradient_formats.icon" class="Icon.cls">
+            <svg>
+                <use xlink:href="#menu.sym"></use>
+            </svg>
+        </div>
+        <div id="gradient_formats.drop" class="Dropdown.cls">
+            <div id="rgb_check.id" class="CheckBox.cls">
+                <input data-value="rgb" type="checkbox">
+                <label>RGB</label>
+            </div>
+            <div id="hsl_check.id" class="CheckBox.cls">
+                <input data-value="hsl" type="checkbox">
+                <label>HSL</label>
+            </div>
+            <div id="cmyk_check.id" class="CheckBox.cls">
+                <input data-value="cmyk" type="checkbox">
+                <label>CMYK</label>
+            </div>
+            <div id="pantone_check.id" class="CheckBox.cls Hide.cls">
+                <input data-value="pantone" type="checkbox">
+                <label>Pantone</label>
+            </div>
+        </div>
+    </div> </div></div>     <div id="hsl_gradient.id" class="HSL.cls">
+        <div id="range_gradient.id" class="HRange.cls" data-min="0" data-max="359" data-format="0&deg;">
+            <svg width="100%" height="14">
+                <rect class="HRTrack.cls" y="4" height="6" rx="3" stroke="none" fill="#c0c0c0"></rect>
+                <circle class="HRThumb.cls" cx="7" cy="7" r="6" fill="transparent" stroke="#197fa2"></circle>
+            </svg>        
+        </div>
+        <div id="columns_gradient.id" class="RadioGroup.cls">
+            <div class="hsl_clm.cls Hide.cls">
+                <div id="hue_gradient.id" class="Radio.cls Active.cls"><span>H:</span><input type="number" min="0" max="359" data-name="hue">&deg;</div>
+                <div id="sat_gradient.id" class="Radio.cls"><span>S:</span><input type="number" min="0" max="100" data-name="sat">%</div>
+                <div id="lum_gradient.id" class="Radio.cls"><span>L:</span><input type="number" min="0" max="100" data-name="lum">%</div>
+            </div>
+            <div class="rgb_clm.cls Hide.cls">
+                <div id="r_gradient.id" class="Radio.cls"><span>R:</span><input type="number" min="0" max="255" data-name="red"></div>
+                <div id="g_gradient.id" class="Radio.cls"><span>G:</span><input type="number" min="0" max="255" data-name="green"></div>
+                <div id="b_gradient.id" class="Radio.cls"><span>B:</span><input type="number" min="0" max="255" data-name="blue"></div>
+            </div>
+            <div class="cmyk_clm.cls Hide.cls">
+                <div id="c_gradient.id" class="Radio.cls"><span>C:</span><input type="number" min="0" max="100" data-name="cyan">%</div>
+                <div id="m_gradient.id" class="Radio.cls"><span>M:</span><input type="number" min="0" max="100" data-name="magenta">%</div>
+                <div id="y_gradient.id" class="Radio.cls"><span>Y:</span><input type="number" min="0" max="100" data-name="yellow">%</div>
+                <div id="k_gradient.id" class="Radio.cls"><span>K:</span><input type="number" min="0" max="100" data-name="black">%</div>
+            </div>
+            <div class="pantone_clm.cls Hide.cls">
+                <div id="pantone_gradient.id" class="Radio.cls"></div>
+            </div>
+        </div>
+    </div>                     <span class="RangeLabel.cls"><label>Color transparency: </label><input class="AutoWidth.cls" type="number" value="0" data-name="stop_trans" min="0" max="100">%</span>
+                    <div id="stop_trans.id" class="HRange.cls GreyRange.cls" data-min="0" data-max="1" data-format="0%" data-tips="0"></div>
+                    <div id="gradient_type.id" class="Right.cls">
+                        <span id="linear.icon" class="Selected.cls Icon.cls">Linear</span><span id="radial.icon" class="Icon.cls">Radial</span>
+                    </div>
+                    <div id="linear_angle.id">
+                        <span class="RangeLabel.cls"><label>Angle: </label> <input class="AutoWidth.cls" type="number" value="0" data-name="angle" min="0" max="360">&deg;</span>
+                        <div id="angle.id" class="HRange.cls" data-min="0" data-max="360" data-format="0" data-steps="5" data-tips="0"></div>
+                    </div>
+                    <div id="radial_radius.id" class="Hide.cls">
+                        <span class="RangeLabel.cls"><label>Radius: </label> <input class="AutoWidth.cls" type="number" value="0" data-name="radius" min="0" max="300">%</span>
+                        <div id="radius.id" class="HRange.cls" data-min="0" data-max="300" data-format="0" data-steps="1" data-tips="0"></div>
+                    </div>
+                </div>
+                <span class="RangeLabel.cls"><label>Color transparency: </label> <input class="AutoWidth.cls" type="number" value="0" data-name="color_trans" min="0" max="100">%</span> <div id="color_trans.id" class="HRange.cls" data-min="0" data-max="1" data-format="0%" data-tips="0"></div><div id="save_gradient.id" class="Hide.cls"><div draggable="true"><svg id="custom_gradient.icon" class="Pad.cls"><rect x="0%" y="0%" width="100%" height="100%" fill="url(#preview_linear.grad)"></rect></svg></div><div id="reset_gradient.id"></div></div><div class="Button.cls"><button type="button" class="OK.cls"></button><button type="button" class="Cancel.cls"></button></div></div></div><div id="color_palette.drop" class="Dropdown.cls"><div id="color_palette.id"><div id="picker.id"><div id="pick_bg.id"></div><div id="pick_bg_alt.id"></div><div id="palette_pointer.id"></div></div><div id="slider.id"><div id="slider_pointer.id"></div></div></div><svg id="p_recent.id" class="Hide.cls"></svg><div class="ColorBar.cls"><input id="pcolor_input.id" type="text" value="" disabled="disabled">     <div id="pcolor_formats.id">
+        <div id="pcolor_formats.icon" class="Icon.cls">
+            <svg>
+                <use xlink:href="#menu.sym"></use>
+            </svg>
+        </div>
+        <div id="pcolor_formats.drop" class="Dropdown.cls">
+            <div id="rgb_check.id" class="CheckBox.cls">
+                <input data-value="rgb" type="checkbox">
+                <label>RGB</label>
+            </div>
+            <div id="hsl_check.id" class="CheckBox.cls">
+                <input data-value="hsl" type="checkbox">
+                <label>HSL</label>
+            </div>
+            <div id="cmyk_check.id" class="CheckBox.cls">
+                <input data-value="cmyk" type="checkbox">
+                <label>CMYK</label>
+            </div>
+            <div id="pantone_check.id" class="CheckBox.cls Hide.cls">
+                <input data-value="pantone" type="checkbox">
+                <label>Pantone</label>
+            </div>
+        </div>
+    </div> </div>     <div id="hsl_pcolor.id" class="HSL.cls">
+        <div id="range_pcolor.id" class="HRange.cls" data-min="0" data-max="359" data-format="0&deg;">
+            <svg width="100%" height="14">
+                <rect class="HRTrack.cls" y="4" height="6" rx="3" stroke="none" fill="#c0c0c0"></rect>
+                <circle class="HRThumb.cls" cx="7" cy="7" r="6" fill="transparent" stroke="#197fa2"></circle>
+            </svg>        
+        </div>
+        <div id="columns_pcolor.id" class="RadioGroup.cls">
+            <div class="hsl_clm.cls Hide.cls">
+                <div id="hue_pcolor.id" class="Radio.cls Active.cls"><span>H:</span><input type="number" min="0" max="359" data-name="hue">&deg;</div>
+                <div id="sat_pcolor.id" class="Radio.cls"><span>S:</span><input type="number" min="0" max="100" data-name="sat">%</div>
+                <div id="lum_pcolor.id" class="Radio.cls"><span>L:</span><input type="number" min="0" max="100" data-name="lum">%</div>
+            </div>
+            <div class="rgb_clm.cls Hide.cls">
+                <div id="r_pcolor.id" class="Radio.cls"><span>R:</span><input type="number" min="0" max="255" data-name="red"></div>
+                <div id="g_pcolor.id" class="Radio.cls"><span>G:</span><input type="number" min="0" max="255" data-name="green"></div>
+                <div id="b_pcolor.id" class="Radio.cls"><span>B:</span><input type="number" min="0" max="255" data-name="blue"></div>
+            </div>
+            <div class="cmyk_clm.cls Hide.cls">
+                <div id="c_pcolor.id" class="Radio.cls"><span>C:</span><input type="number" min="0" max="100" data-name="cyan">%</div>
+                <div id="m_pcolor.id" class="Radio.cls"><span>M:</span><input type="number" min="0" max="100" data-name="magenta">%</div>
+                <div id="y_pcolor.id" class="Radio.cls"><span>Y:</span><input type="number" min="0" max="100" data-name="yellow">%</div>
+                <div id="k_pcolor.id" class="Radio.cls"><span>K:</span><input type="number" min="0" max="100" data-name="black">%</div>
+            </div>
+            <div class="pantone_clm.cls Hide.cls">
+                <div id="pantone_pcolor.id" class="Radio.cls"></div>
+            </div>
+        </div>
+    </div> </div> <div id="notify.dialog">
+        <div class="Content.cls"></div>
+        <div class="Button.cls"><button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Cancel</button></div>
+    </div>
+    <div id="edit_stencil.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Edit stencil</div>
+            <div class="Content.cls"><div class="RightInput.cls">
+    <label>Name</label>
+    <input id="stencil_name.id" type="text"  />
+    
+</div><div class="RightInput.cls">
+    <label>Description</label>
+    <textarea id="stencil_desc.id" type="text" ></textarea>
+</div><div class="RightInput.cls">
+    <label>Category</label>
+    <input id="stencil_cat.id" placeholder="General, People, Brands" class="Menu.cls" type="text"  />
+    
+</div><div class="Help.cls">Separate with comma</div><div class="RightInput.cls">
+    <label>Credits</label>
+    <input id="sten_cred_name.id" type="text"  />
+    
+</div><div class="RightInput.cls">
+    <label>Credits link</label>
+    <input id="sten_cred_link.id" placeholder="https://vecta.io/" type="text"  />
+    
+</div>
+            </div>
+            <div class="Button.cls"><button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="share_stencil.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Share stencil</div>
+            <div class="Content.cls">
+                <label></label>
+                <div class="List.cls"></div>
+            </div>
+            <div class="Button.cls"><button type="button" class="Cancel.cls">Close</button>
+            </div>
+        </div>
+    </div>
+    <div id="slack_channels.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Choose a channel to share the link</div>
+            <div class="Content.cls"></div>
+            <div class="Button.cls">
+                <div class="Left.cls">
+                    <button>Add Slack Team</button>
+                </div><button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Cancel</button></div>
+        </div>
+    </div>
+     <div id="google_account.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Disconnect Google Drive</div>
+            <div class="Content.cls"></div>
+            <div class="Button.cls"><button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Cancel</button></div>
+        </div>
+    </div>
+    <div id="pref.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Preferences</div>
+            <div class="Content.cls">
+                <div class="Stack.cls" data-group="general">
+                    <div class="Title.cls">General
+                        <div class="Icon.cls"><svg><use xlink:href="#up_arrow.sym"></use></svg></div>
+                    </div>
+                    <div class="Content.cls">        <div id="lang.id" class="RightInput.cls">
+            <label>Language</label>
+            <select   data-value="lang"><option value="en">English</option><option value="hi">हिन्दी</option><option value="fr">Français</option><option value="ja">日本語</option><option value="sv">Svenska</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="it">Italiano</option><option value="pt">Português</option><option value="vi">Tiếng Việt</option><option value="ru">Pусский язык</option><option value="es">Español</option><option value="de">Deutsch</option><option value="id">Bahasa Indonesia</option><option value="th">ภาษาไทย</option><option value="nl">Nederlands</option><option value="ko">한국어</option><option value="tl">Wikang Filipino</option><option value="pl">Polski</option></select>
+            
+        </div><div class="Row.cls">        <div id="key_incre_type.id" class="RightInput.cls">
+            <label>Nudging offset</label>
+            <select   data-value="key_incre_type"><option value="auto">Auto</option><option value="custom">Custom</option></select>
+            
+        </div><div id="custom_key_incre.id" class="RightInput.cls">
+    
+    <input type="text"   data-value="custom_key_incre"/>
+    
+</div></div><div class="RightInput.cls">
+    <label>Connector curve</label>
+    <input type="text"   data-value="connector_curve"/>
+    
+</div>    
+                            <hr>
+                            <div><div class="CheckBox.cls">
+    <input  data-value="sym_resize" type="checkbox">
+    <label for="">Automatically resize symbols to snap on grid</label>
+</div></div>
+                            <div><div class="CheckBox.cls">
+    <input  data-value="export_selection" type="checkbox">
+    <label for="">Ignore selection and use entire page when exporting</label>
+</div> </div>
+                            <div><div class="CheckBox.cls">
+    <input  data-value="show_stencil_bar" type="checkbox">
+    <label for="">Always show stencil scroll bar</label>
+</div> </div>
+                            <div><div class="CheckBox.cls">
+    <input  data-value="show_stencil_confirm" type="checkbox">
+    <label for="">Show confirmation dialog when modifying stencils</label>
+</div> </div>
+                            <div><div class="CheckBox.cls">
+    <input  data-value="disable_touch_mode" type="checkbox">
+    <label for="">Disable automatic touch screen mode</label>
+</div> </div>     
+                            <div><div class="CheckBox.cls">
+    <input  data-value="auto_insert_tblock" type="checkbox">
+    <label for="">Automatically insert title block after creating a new page</label>
+</div> </div>   
+                            <div><div class="CheckBox.cls Hide.cls">
+    <input  data-value="snap" type="checkbox">
+    <label for="">Automatically snap to nearby shapes</label>
+</div> </div>
+                            <div class="Hide.cls RightInput.cls">
+    <label>Snap strength</label>
+    <input type="text"   data-value="snap_strength"/>
+    
+</div>
+                            <div id="sound_setting.id">
+                                <hr>
+                                <label>Play sound when</label><div class="CheckBox.cls">
+    <input  data-value="new_mssg" type="checkbox">
+    <label for="">Chat message is received</label>
+</div><div class="CheckBox.cls">
+    <input  data-value="new_user" type="checkbox">
+    <label for="">Collaborator joins editing</label>
+</div>
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="Stack.cls Collapse.cls" data-group="noti">
+                    <div class="Title.cls">Notification
+                        <div class="Icon.cls"><svg><use xlink:href="#up_arrow.sym"></use></svg></div>
+                    </div>
+                    <div class="Content.cls">
+                        <div><div class="CheckBox.cls">
+    <input  data-value="push" type="checkbox">
+    <label for="">Enable desktop notification</label>
+</div></div>
+                        <div><label>Notify me when a team member perform the following actions on a drawing, folder or stencil</label></div>
+                        <div class="Inline.cls"><div class="CheckBox.cls">
+    <input  data-value="created" type="checkbox">
+    <label for="">Create new</label>
+</div><div class="CheckBox.cls">
+    <input  data-value="renamed" type="checkbox">
+    <label for="">Rename</label>
+</div><div class="CheckBox.cls">
+    <input  data-value="trashed" type="checkbox">
+    <label for="">Trash</label>
+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Stack.cls Collapse.cls" data-group="import">
+                    <div class="Title.cls">DWG/DXF
+                        <div class="Icon.cls"><svg><use xlink:href="#up_arrow.sym"></use></svg></div>
+                    </div>
+                    <div class="Content.cls">        <div class="RightInput.cls">
+            <label>Default unit</label>
+            <select   data-value="default_unit"><option value="auto">Auto</option><option value="mm">mm</option><option value="in">in</option></select>
+            
+        </div><div class="RightInput.cls">
+    <label>Stroke width</label>
+    <input type="text"   data-value="dxf_stroke"/>
+    
+</div><div class="Inline.cls" id="dxf_options.id"><div class="CheckBox.cls">
+    <input  data-value="dxf_dimensions" type="checkbox">
+    <label for="">Import dimensions</label>
+</div><div class="CheckBox.cls">
+    <input  data-value="dxf_layers" type="checkbox">
+    <label for="">Import layers</label>
+</div><div class="CheckBox.cls">
+    <input  data-value="join_shapes" type="checkbox">
+    <label for="">Join shapes</label>
+</div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="Button.cls">
+                <button type="button" class="Default.cls">Save</button><button type="button" class="Cancel.cls">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="noti.drop" class="Dropdown.cls">
+        <ul id="noti_list.id">
+            <li class="Muted.cls">It's a little quiet, no? Notifications will be buzzing in a bit.</li>
+        </ul>
+    </div>
+    <div id="profile.drop" class="Dropdown.cls">
+        <div>
+            <div id="profile_photo.id"></div>
+            <div class="Profile.cls">
+                <div id="profile_name.id"></div>
+                <div id="profile_email.id"></div>
+            </div>
+        </div>
+        <div class="Buttons.cls">
+            <button type="button" id="edit_profile.id">Edit Profile</button>
+            <button type="button" id="profile_logout.id">Sign out</button>
+        </div>
+        <div>
+            <button type="button" class="Hide.cls" id="ann_create.id">Send announcement</button>
+        </div>
+        <ul class="Online.cls">
+            <div>Online</div>
+        </ul>
+    </div>
+    <div id="mssg.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls"></div>
+            <div class="Content.cls"></div>
+            <div class="Button.cls"><button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Cancel</button></div>    
+        </div>
+    </div>
+    <div id="modal.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls"></div>
+            <div class="Content.cls"><div>
+    
+    <input type="text"  />
+    
+</div><div class="Help.cls"></div>
+            </div>
+            <div class="Button.cls"><button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Cancel</button></div>    
+        </div>
+    </div>
+    <div id="access.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls"></div>
+            <div class="Content.cls">
+                <label></label>
+                <div class="List.cls"></div>
+            </div>
+            <div class="Button.cls">
+                <div class="Left.cls">
+                    <button id="invite_people.id">Invite people</button>
+                </div><button id="save_changes.id" type="button" class="Default.cls">Save changes</button><button type="button" class="Cancel.cls">Cancel</button></div>
+        </div>
+    </div>
+    <div id="sessions.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Multiple sessions detected</div>
+             <div class="Content.cls">
+                <div class="List.cls"></div>
+            </div>
+            <div class="Button.cls">
+                <div class="Left.cls"><button id="signout_this.id" type="button" class="Default.cls">Abort and log out</button>
+                </div>
+                <div><button id="signout_others.id" type="button">Close sessions and sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="invite.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls"></div>
+            <div class="Content.cls">
+                <div id="drawing_access.id">
+                    <label for="drawing_access.id">Who can access</label>
+                    <div class="Row.cls">
+                        <input type="text" readonly id="drawing_link.id">
+                        <button>Copy link</button>
+                    </div>
+                </div>
+                <div id="team_name.id">
+                    <label>Team / Project name</label>
+                    <input type="text"/>  
+                </div><div class="Dual.cls">
+    <label>Invite by email (optional)</label>
+    <input id="invites.id" placeholder="john@johnsmithenterprise.com, richard@johnsmithenterprise.com" class="Menu.cls" type="text" />
+    
+</div><div>
+    <label>Message (optional)</label>
+    <textarea type="text" ></textarea>
+</div>
+            </div>
+            <div class="Button.cls"><div class="Left.cls">
+                    <button id="who_access.id">Who has access</button>
+                </div><button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Close</button></div>
+        </div>
+    </div>
+    <div id="admin_invite.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Add user</div>
+            <div class="Content.cls"><div>
+    <label>Invite by email</label>
+    <textarea placeholder="john@johnsmithenterprise.com, richard@johnsmithenterprise.com" type="text" ></textarea>
+</div></div>
+            <div class="Button.cls"><button id="invite_users.id" type="button" class="Default.cls">Invite</button><button type="button" class="Cancel.cls">Close</button></div>
+        </div>
+    </div>
+    <div id="team_slack.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Create team</div>
+            <div class="Content.cls">
+                  <div>
+    <label>Team / Project name</label>
+    <input id="team_name.id" placeholder="My awesome team" type="text"  />
+    
+</div>
+                <label>Channel list</label>
+                <ul class="Hide.cls">
+                    <li class="Muted.cls">Loading<div id="loading.id"><span></span></div></li>
+                </ul>
+            </div>
+            <div class="Button.cls">
+                <button class="Default.cls">Create team</button>
+                <button id="back.id">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="edit_profile.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Edit Profile</div>
+            <div class="Content.cls">
+                <div id="avatar_preview.id"></div>
+                <div id="avatar_container.id"></div>
+                <div id="user_name.id">
+                    <label>Name</label>
+                    <input type="text"/>  
+                </div>
+            </div>
+            <div class="Button.cls">
+                <div class="Left.cls">
+                    <button id="remove_avatar.id" class="Hide.cls">Remove Avatar</button>
+                </div>
+                <button class="Default.cls">Save</button>
+                <button class="Cancel.cls">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="move_to.dialog" class="Modal.cls">
+    <div class="Dialog.cls">
+        <div class="Title.cls">Please select a destination folder</div>
+        <div class="Content.cls">
+            <ul></ul>
+        </div>
+        <div class="Button.cls"><button type="button" class="Default.cls">Move</button><button type="button" class="Cancel.cls">Cancel</button>
+        </div>
+        </div>
+    </div>
+    <div id="help.dialog" class="Dialog.cls">
+        <div class="Title.cls">
+            <button class="Back.cls Hide.cls">
+                <svg class="Icon.cls">
+                    <use xlink:href="#back_arrow.sym"></use>
+                </svg>
+            </button>
+            
+            <div class="HelpTitle.cls">Vecta Help</div>
+          
+          <div class="Right.cls">
+              <button class="NewTab.cls Hide.cls">
+                    <svg class="Icon.cls">
+                        <use xlink:href="#new_tab.sym"></use>
+                    </svg>
+                </button>
+                
+                <button class="Cancel.cls">
+                    <div class="Icon.cls">
+                        <svg class="close.tip">
+                            <use xlink:href="#close.sym" />
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="Content.cls">
+            <div class="SearchContent.cls">
+                <input id="help_search.id" type="text" placeholder="Search" autocomplete="off">
+                <ul id="help.menu" class="Menu.cls"></ul>
+            </div>
+            <ul id="help.nav" class="Dialog.cls">
+                <li><a href="/help/importing-files/#importingimagesintovectapnggifjpgsvgai" target="help_iframe.name">Importing images into Vecta (PNG, GIF, JPG, SVG, AI)</a></li>
+            <li><a href="/help/basic-shape-operations/" target="help_iframe.name">Basic shape operations</a></li>
+            <li><a href="/help/modifying-fonts-and-text/" target="help_iframe.name">Modifying fonts and text</a></li>
+            <li><a href="/help/using-the-color-picker/" target="help_iframe.name">Using the color picker</a></li>
+            </ul>
+            <iframe name="help_iframe.name" frameborder="0" id="help_iframe.id" class="Hide.cls" style="width: 100%;"> </iframe>
+        </div>
+    </div>
+    <div id="export_image.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Export Image</div>
+            <div class="Content.cls">
+                <div class="RightInput.cls">
+                    <label>Resolution</label>
+                    <select id="resolution.id">
+                        <option value="96">96 dpi (Recommended) </option>
+                        <option value="180">180 dpi</option>
+                        <option value="300">300 dpi (For printing) </option>
+                        <option value="_96">@1x</option>
+                        <option value="_192">@2x</option>
+                        <option value="_288">@3x</option>
+                        <option value="_384">@4x</option>
+                    </select>
+                </div>
+                <div id="background_div.id" class="RightInput.cls">
+                    <label>Background</label>
+                    <select id="background.id">
+                        <option>Transparent</option>
+                        <option value="opaque">Opaque</option>
+                    </select>
+                </div>
+                <div class="Inline.cls">
+                    <div class="CheckBox.cls">
+    <input  type="checkbox">
+    <label id="one_page.id" for="">Single page</label>
+</div><div class="CheckBox.cls">
+    <input  type="checkbox">
+    <label id="multi_page.id" for="">All pages</label>
+</div>
+                </div>
+            </div>
+            <div class="Button.cls">
+                <button type="button" class="Default.cls">Download</button>
+                <button type="button" class="Cancel.cls">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <ul id="invites.menu" class="Menu.cls"></ul>
+    <ul id="stencil_cat.menu" class="Menu.cls"></ul>
+    <ul id="plugin_cat.menu" class="Menu.cls"></ul><div id="export_svg.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Export SVG</div>
+            <div class="Content.cls">
+                <div>
+                    <label>Precision
+                        <select id="export_svg_decimals.id">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </label>
+                    <!--id is needed to put into "for" attribute of label so that users can check/uncheck the it by clicking on label.-->
+                    <div class="CheckBox.cls">
+    <input  type="checkbox">
+    <label id="export_svg_cdata.id" for="">Remove CDATA</label>
+</div><div class="CheckBox.cls">
+    <input  type="checkbox">
+    <label id="export_svg_prettify.id" for="">Prettify</label>
+</div><div class="CheckBox.cls">
+    <input  type="checkbox">
+    <label id="export_svg_compress.id" for="">Compress</label>
+</div><svg id="export_compress_pref.id" class="Menu.cls" width="16" height="16" style="display: none"><use xlink:href="#pref16.sym"></use></svg></div>
+                <textarea spellcheck="false"></textarea>
+            </div>
+            <div class="Button.cls">
+                <button id="export_svg_download.id" type="button" class="Default.cls">Download</button><button id="export_svg_clipboard.id" type="button">Copy to clipboard</button><button type="button" class="Cancel.cls">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div id="export_pdf.dialog" class="Modal.cls">
+        <div class="Dialog.cls">
+            <div class="Title.cls">Export PDF</div>
+            <div class="Content.cls">
+                    <div class="CheckBox.cls">
+    <input  type="checkbox">
+    <label id="one_page.id" for="">Single page</label>
+</div><div class="CheckBox.cls">
+    <input  type="checkbox">
+    <label id="multi_page.id" for="">All pages</label>
+</div></div>
+            <div class="Button.cls">
+                <button type="button" class="Default.cls">Download</button>
+                <button type="button" class="Cancel.cls">Cancel</button>
+            </div>
+        </div>
+    </div>    <div id="dummy.id">
+        <svg id="masters.id" width="0" height="0">
+            <defs>
+                <symbol id="logo.sym" viewBox="0 0 256 256" stroke="none" stroke-linecap="round" stroke-linejoin="round" fill-rule="evenodd">
+    <ellipse cx="48.5" cy="64.09" fill="var(--logo-red)" rx="27.2" ry="27.72"/>
+    <ellipse cx="138.1" cy="28.22" fill="var(--logo-blue)" rx="27.2" ry="27.72"/>
+    <ellipse cx="219.7" cy="104.85" fill="var(--logo-yellow)" rx="27.2" ry="27.72"/>
+    <path d="M.5 256.5l38-130.45q10-34.24 38-.4l11.2 13.6L16.66 256.5z" fill="var(--logo-red)"/>
+    <path d="M87.7 139.26l27.68-45.82q22.72-37.5 40 0l28.16 61.15-55.2 33.75z" fill="var(--logo-blue)"/>
+    <path d="M230.42 256.5l-46.88-101.9q36.16-22 43.84 3.9l29.12 98z" fill="var(--logo-yellow)"/>
+    <path d="M16.66 256.5L87.7 139.26l40.64 49.08z" fill="var(--logo-red-dark)"/>
+    <path d="M128.34 188.34l56.32 68.16h45.76l-46.88-101.9z" fill="var(--logo-yellow-dark)"/>
+    <path d="M16.66 256.5l111.68-68.16 56.32 68.16z" fill="var(--logo-yellow-light)"/>
+</symbol>
+<symbol id="logo_text.sym">
+    <g stroke="none">
+        <ellipse cx="9.87" cy="12.92" fill="#e91e63" rx="5.31" ry="5.41"/>
+        <ellipse cx="43.31" cy="20.88" fill="#ffc107" rx="5.31" ry="5.41"/>
+        <ellipse cx="27.37" cy="5.91" fill="#2196f3" rx="5.31" ry="5.41"/>
+        <path d="M.5 50.5l7.42-25.48q1.95-6.68 7.42-.08l2.2 2.66L3.66 50.5z" fill="#e91e63"/>
+        <path d="M17.53 27.6l5.4-8.95q4.43-7.32 7.8 0l5.5 11.95-10.78 6.6z" fill="#2196f3"/>
+        <path d="M45.4 50.5l-9.16-19.9q7.06-4.3 8.56.77l5.7 19.14z" fill="#ffc107"/>
+        <path d="M3.66 50.5l13.88-22.9 7.93 9.6z" fill="#cc155b"/>
+        <path d="M25.47 37.2l11 13.3h8.94l-9.16-19.9z" fill="#e0a80d"/>
+        <path d="M3.66 50.5l21.8-13.3 11 13.3z" fill="#cc960e"/>
+    </g>
+    <text fill="#464646" font-weight="bold" font-size="24" text-anchor="start" stroke="none">
+        <tspan x="60.5" y="33.42">vecta.io</tspan>
+    </text>
+    <text fill="#464646" font-size="9" font-weight="bold" stroke="none" text-anchor="middle">
+        <tspan x="120" y="44.97">Early Access</tspan>
+    </text>
+</symbol><symbol id="fb_gray.sym">
+            <g transform="translate(-0.5 -0.5)">
+                <path d="M9.05 16.5H1.38c-.48 0-.88-.4-.88-.88V1.38C.5.9.9.5 1.38.5h14.24c.48 0 .88.4.88.88v14.24c0 .48-.4.88-.88.88h-4.08v-6.2h2.08l.3-2.4h-2.4V6.35c0-.7.2-1.18 1.2-1.18h1.28V3a17.8 17.8 0 0 0-1.87-.09c-1.84 0-3.1 1.12-3.1 3.2V7.9h-2.1v2.4h2.1z" fill="#b3b3b3" stroke="none" fill-rule="nonzero"/>
+            </g>
+        </symbol>
+        <symbol id="twitter_gray.sym">
+            <g transform="translate(-0.5 -0.5)">
+                <path d="M5.53 15c6.04 0 9.34-5 9.34-9.34 0-.14 0-.28-.01-.42a6.8 6.8 0 0 0 1.64-1.7 6.6 6.6 0 0 1-1.89.52c.68-.4 1.2-1.05 1.45-1.82a6.6 6.6 0 0 1-2.09.8C13.37 2.4 12.52 2 11.58 2a3.3 3.3 0 0 0-3.29 3.28c0 .26.03.5.1.75A9.3 9.3 0 0 1 1.61 2.6a3.3 3.3 0 0 0-.44 1.65c0 1.14.58 2.14 1.46 2.73-.54-.01-1.04-.16-1.5-.4v.04c0 1.6 1.13 2.92 2.64 3.22-.28.08-.57.12-.87.12-.2 0-.42-.02-.62-.06a3.3 3.3 0 0 0 3.07 2.28 6.6 6.6 0 0 1-4.08 1.4 6.8 6.8 0 0 1-.78-.04A9.3 9.3 0 0 0 5.53 15" fill="#b3b3b3" stroke="none" fill-rule="nonzero"/>
+            </g>        
+        </symbol>
+        <symbol id="email_gray.sym">
+            <g transform="translate(-0.5 -0.5)">
+                <path d="M16.5 5.34l-8 4.02-8-4.02v7.24c0 .5.45.92 1 .92h14c.55 0 1-.4 1-.92zm-.72-1.8c-.08-.02-.17-.03-.26-.03h-14c-.1 0-.18.01-.27.03l7.27 3.65z" stroke="none" fill-rule="nonzero"/>            
+            </g>        
+        </symbol>
+        <symbol id="to_top.sym">
+            <path transform="translate(-1 -1)" d="M4 18l9-11 9 11" stroke-width="3" stroke-linejoin="miter" stroke="silver" fill="none"/>        
+        </symbol>
+        <symbol id="quote_open.sym" stroke="none" fill="#565656">
+            <path d="M17.1608 1.375q-5.375 3.125-4.25 7.875c3.13-2.25 4.88.5 4.875 2.625.006 2.875-1.625 4.125-3.625 4.125-4.37-1-4.244-6.125-4.12-8.5.75-4.25 3.62-6.375 7.244-7.25-.0313 0-.0313 1.125-.125 1.125zm-9.75 0Q2.0358 4.5 3.1608 9.25c3.13-2.25 4.88.5 4.875 2.625C8.0417 14.75 6.4108 16 4.4107 16c-4.37-1-4.244-6.125-4.12-8.5.75-4.25 3.62-6.375 7.244-7.25-.0313 0-.0313 1.125-.125 1.125z"/>
+        </symbol>
+        <symbol id="quote_close.sym" stroke="none" fill="#565656">
+            <path d="M.875 14.875Q6.25 11.75 5.125 7C1.994 9.25.244 6.5.25 4.375.244 1.5 1.875.25 3.875.25c4.37 1 4.244 6.125 4.12 8.5C7.244 13 4.375 15.125.75 16c.0313 0 .0313-1.125.125-1.125zm9.75 0Q16 11.75 14.875 7c-3.13 2.25-4.88-.5-4.875-2.625C9.994 1.5 11.625.25 13.625.25c4.37 1 4.244 6.125 4.12 8.5-.75 4.25-3.62 6.375-7.244 7.25.0313 0 .0313-1.125.125-1.125z"/>
+        </symbol>
+        <symbol id="quote_open_cust.sym" stroke="none" fill="303030">
+            <path d="M1 7h5v5H1z"/><path d="M1 7.091Q1 0 6 0q0 3 0 3-2 0-1.875 4.091-3.125 0-3.125 0zM8 7h5v5H8z"/><path d="M8 7.091Q8 0 13 0q0 3 0 3-2 0-1.875 4.091-3.125 0-3.125 0z"/>
+        </symbol>
+        <symbol id="quote_close_cust.sym" stroke="none" fill="303030">
+            <path d="M13 5H8V0h5z"/><path d="M13 4.908q0 7.091-5 7.091 0-3 0-3 2 0 1.875-4.091 3.125 0 3.125 0zM6 5H1V0h5z"/><path d="M6 4.908q0 7.091-5 7.091 0-3 0-3 2 0 1.875-4.091 3.125 0 3.125 0z"/>
+        </symbol>
+        <linearGradient id="W7M5" x1="100%" y1="50%" x2="0%" y2="50%">
+            <stop offset="0%" stop-color="#00e6dc"/>
+            <stop offset="100%" stop-color="#00ffb9"/>
+        </linearGradient>
+        <symbol id="play.sym">
+            <g transform="translate(-.5 -.5)" stroke="none">
+                <circle cx="45" cy="45" fill="url(#W7M5)" r="45"/>
+                <path d="M61 43.5l-26-13v26z" fill="#000028"/>
+            </g>
+        </symbol>
+                
+                
+            </defs>
+        </svg>
+    </div> <div id="symbols.id" class="Hide.cls"></div> <div id="history.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Version history</div><div class="Content.cls"><div id="current_doc.id"></div><div id="reverted_doc.id"></div><ul id="history_list.id"></ul></div><div class="Button.cls"><div class="Left.cls"> <div class="CheckBox.cls">
+    <input  data-value="show_preview" type="checkbox">
+    <label for="">Show preview of current drawing</label>
+</div> </div><button type="button" id="rollback.id">Load</button> <button type="button" class="Cancel.cls">Close</button> </div></div></div><div id="custom_font.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Add Custom Fonts</div><div class="Content.cls"><div class="SubContent.cls"><div class="Row.cls"> <div>
+    
+    <input placeholder="https://fonts.googleapis.com/css?family=Roboto:400,400i" class="FontsInput.cls" type="text"  />
+    
+</div> <button class="Add.cls Disable.cls">Add</button></div><div class="Help.cls">Please <a target="_blank" href="https://fonts.google.com/">browse Google Fonts</a> to obtain URL above</div><div class="Help.cls Consent.cls Hide.cls"><b>We need your consent to load Google Font service!</b> We use a third party service to embed fonts that may collect data about your activity. Please review the details and accept the service <a href="" class="ShowConsent.cls">here</a> to use Google Font.</div><div class="List.cls"></div></div></div><div class="Button.cls"><div class="Left.cls FileInput.cls"><input type="text" placeholder="No file chosen" class="Hide.cls"> <input type="file" accept=".woff,.ttf" class="Hide.cls"> <button id="upload_fonts.id" type="button">Upload custom fonts</button> </div> <button type="button" class="Cancel.cls">Close</button> </div></div></div><div id="code_editor.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Edit code</div><div class="Content.cls"><label></label> <textarea id="code_editor.id"></textarea> <svg id="codeeditor_resize.id"><g stroke="#c0c0c0" stroke-width="2" stroke-linecap="round"><path d="M9.25 1.75l-7.5 7.5" fill="#464646"/><path d="M9.25 6L6 9.25" fill="none"/></g></svg></div><div class="Button.cls"><button type="button" class="Left.cls Inform.cls Hide.cls">Run script</button> <button type="button" class="Default.cls">Save</button> <button type="button" class="Cancel.cls">Cancel</button> </div></div></div><div id="symbols_request.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Request for symbols</div><div class="Content.cls"> <div class="UserInfo.cls"><div>
+    <label>Name</label>
+    <input id="request_symbol_name.id" placeholder="John Smith" type="text"  />
+    
+</div><div>
+    <label>Email</label>
+    <input id="request_symbol_email.id" placeholder="john@johnsmithenterprise.com" type="text"  />
+    
+</div></div><div>
+    <label>Message</label>
+    <textarea id="request_symbol_message.id" placeholder="Symbol request, example link" type="text" ></textarea>
+</div><div >
+    <label>Attachment</label>
+    <input id="request_symbol_attachment.id" type="file" accept=".gif,.png,.jpg,.svg" multiple style="display:none"/>
+    
+</div> <div><ul id="file_list.id"></ul></div></div><div class="Button.cls"><div class="Left.cls"><button id="choose_file.id" type="button">Choose File</button></div> <button type="button" class="Default.cls">OK</button><button type="button" class="Cancel.cls">Cancel</button> </div></div></div><div id="comment.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Tag Friends</div><div class="Content.cls"><p>No friends found in this drawing.<br />Share this drawing to your friends in order to tag them.</p><ul class="CurrentList.cls"></ul><div><input type="text"><ul class="AutoComplete.cls"><li>...</li></ul></div></div><div class="Button.cls"> <button type="button" class="Default.cls">Notify</button> <button type="button" class="Cancel.cls">Cancel</button> </div></div></div><div id="save_changes_link.id" class="Hide.cls"><div>Important: <span>Sign up to save your changes</span> or they will be lost upon refresh</div></div><div id="edit_tblock.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls">Edit Title Block</div><div class="Content.cls"><div><label class="ScopeLabel.cls">Page Scope:</label><div id="page_scope.id" class="SubContent.cls"></div></div><div><label class="ScopeLabel.cls">Document Scope:</label><div id="doc_scope.id" class="SubContent.cls"></div></div><div id="tblock_empty.id"><p class="Muted.cls">No title block data</p></div></div><div class="Button.cls"> <button type="button" class="Default.cls">OK</button> <button type="button" class="Cancel.cls">Cancel</button> </div></div></div><div id="user_dialog.dialog" class="Modal.cls"><div class="Dialog.cls"><div class="Title.cls"></div><div class="Content.cls"></div><div class="Button.cls"></div></div></div>  <input id="hidden_input.id" type="text" value=" " autocomplete="off" inputmode="none"> <script defer src="/js/jquery.3-5-1.js"></script><script defer type="text/javascript"> var versions = {"main":"2210","version":"2210.1016.1000"}</script><script defer src="/app/js/browser.6ea5bf962a.js"></script><script defer src="/js/elasticlunr.3835e334c9.js"></script><script defer src="/js/fdb_modules.1c8e2f4e33.js"></script><script defer src="/app/js/utils.a1c129a41a.js"></script><script defer src="/app/js/hammer.fece96981e.js"></script><script defer src="/app/js/fingerprint.097f60e569.js"></script><script defer src="/app/js/objects.82b1222f70.js"></script><script defer src="/app/js/fire.bb4029ed9b.js"></script><script defer src="/app/js/vecta.bbe3d06d27.js"></script><script defer src="/app/js/ui.4757d20479.js"></script><script defer src="/app/js/jszip.2342ad5899.js"></script><script defer src="/app/js/fonts.564a1871d9.js"></script><script defer src="/nano/js/nano.9ee05e7e39.js"></script><script defer src="/app/js/dxf_maker.6d6ba88cef.js"></script><script defer src="/app/js/opentype.24fa18d43a.js"></script><script defer src="/js/jshint.c8108c1aae.js"></script><script defer src="/app/js/codemirror.a793211c44.js"></script><script defer src="/app/js/pdfkit.cb25f1f9ae.js"></script><script defer src="/app/js/compressor.9514a9e3bc.js"></script><script defer src="/app/js/scroll.a815772616.js"></script> </body>  </html>

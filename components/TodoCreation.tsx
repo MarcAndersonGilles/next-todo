@@ -5,7 +5,7 @@ import TodoAfficher from '@/components/TodoAfficher'
 import TodoChercher from './TodoChercher';
 
 import { useSession } from '@supabase/auth-helpers-react';
-
+import Router from 'next/router';
 
 
 
@@ -32,6 +32,15 @@ const session = useSession();
       setDescription('');
     }
   };
+
+ 
+    if(!session){
+      Router.push({pathname:'/users/login',});
+    }
+
+  
+
+  
 
 console.log(session)
 if(session)
